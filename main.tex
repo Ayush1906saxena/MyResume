@@ -1,0 +1,123 @@
+%-------------------------
+% Resume Template
+% Author : Orest Tokovenko
+% Github : https://github.com/oresttokovenko
+% License : MIT
+% Type: General Non-Technical
+%------------------------
+
+%-------------------------------------------------------------------------------
+%                Document & Class
+%-------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{resume_config}
+% Set the font and formatting for the entire document
+\renewcommand{\sfdefault}{phv}
+\usepackage{lmodern} % Use the Latin Modern font
+\usepackage{hyperref}
+\hypersetup{breaklinks=true}
+% NOTE: <- font size adjustment is available in the resume_config.cls file on the left hand side. ex. \LoadClass[#pt]{article} where # is 10, 11 or 12
+
+% NOTE: If you need to adjust the space between any two lines, use this function: \vspace{#pt} where # is your number. ex. \vspace{-5pt} decreases the space between lines
+
+%-------------------------------------------------------------------------------
+%                Resume Starts Here
+%-------------------------------------------------------------------------------
+
+\begin{document}
+\Header{AYUSH SAXENA}{2}{ayushsaxena.official01@gmail.com}{ayush-saxena-a766b418b}{Ayush1906saxena}
+
+
+
+
+
+
+
+
+%-------------------------------------------------------------------------------
+%                Work Experience
+%-------------------------------------------------------------------------------
+
+\section{Skills}
+\begin{SkillsList}
+    \item \textbf{Programming Languages:} Java, Python, JavaScript \\
+    \item \textbf{Framework and Tools:} \textbf{Oracle SQL(rdbms)}, MongoDB(nosql), Spring5, Hibernate, NextJS, Express, Git, \textbf{Docker, Kubernetes}  \\
+    \item \textbf{Core Subjects:} Operating System, Database Management System(DBMS), OOPS, Linux, Software Engineering
+    \item \textbf{Problem Solving:} \textbf{Data Structures, Algorithms}, Backend Development, Data Analytics, Business Intelligence, API, Web Services(SOAP and REST), \textbf{DevOps}, \textbf{CICD using Jenkins/Jules}, \textbf{AWS Solutions Architect}.
+    \item \textbf{Soft Skills:} Multi-tasking, Leading projects, Agile, Ability to pick up new languages and deliver tasks, Good Communication skills
+    % Add more skills as needed
+\end{SkillsList}
+
+\section{Work Experience}
+
+\WorkExperience
+    {JPMorgan Chase \& Co. : \textbf{Software Engineer 1}} % job title
+    {} % company name
+    {Feb 2023 -- Present} % beginning and end of employment. If currently employed write " - Present"
+    {} % city, country of employment
+    {
+        \item Engineered the full-scale migration of the LOANIQ application from an on-premises infrastructure to the \textbf{Gaia Kubernetes Platform (GKP)} in the NA data center, \textbf{containerizing key vendor packages and microservices using Docker}. Automated multi-environment \textbf{infrastructure provisioning with Terraform}, implementing cluster autoscaling, \textbf{load balancing} across multiple Kubernetes clusters, and ensuring fault tolerance, performance optimization, and minimal downtime during the transition.
+        \item Designed and deployed a \textbf{custom health check UI} as a web application hosted on Kubernetes, providing real-time visibility into the health and status of development, UAT, and production environments. This UI \textbf{consolidated environment monitoring into a single interface}, improving operational efficiency and proactive issue resolution.
+        \item Orchestrated a \textbf{seamless database migration from DBaaS to Gaia Oracle Service (GOS)}, leveraging \textbf{Oracle GoldenGate} for real-time cross-schema replication between OLTP and reporting databases, ensuring data integrity and zero downtime during the migration process.
+        \item \textbf{Consolidated over 300 LOANIQ interfaces} into a single repository leading to just one pipeline for deploying the entire project. This initiative taught me in-depth skills of \textbf{Jules}. Also implemented an aggregator pipeline for other interfaces. This initiative streamlined the deployment process and also \textbf{reduced deployment time by 90\%}. Utilized control-m for batch testing.
+        \item Successfully \textbf{performed Database schema split} for LOANIQ by splitting a very complex and cluttered oracle database into OLTP and OLAP. This initiative reduced query \textbf{processing time for OLTP jobs by an impressive 90\%} and helped logically differentiate JPMC related jobs with Finastra  batch Jobs. This initiative made our modernization team ready for \textbf{migration to GOS(Gaia Oracle) database} further advancing our systems.
+    } 
+\vspace{-10pt}
+\section{Projects}
+
+\WorkExperience
+    {\href{https://github.com/Ayush1906saxena/sfg-pet-clinic}{Dog Clinic Application}} % job title
+
+    {9th Jun 2022 -- 10th Jun 2022} % beginning and end of employment. If currently employed write " - Present"
+    
+    {
+        \item Created a pet clinic web app using \textbf{Spring Boot and Hibernate}, for efficient data management.
+        \item Developed \textbf{RESTful} services with Spring MVC, ensuring sub-50 ms response times for seamless front-end and back-end communication.
+        \item  Managed data persistence with \textbf{Spring Data JPA and Hibernate}, achieving sub-5ms average database query response times for entity management.
+        \item Employed \textbf{Thymeleaf} for dynamic HTML templates, resulting in a 20\% reduction in page load times, simplifying the presentation layer.
+        \item  Executed comprehensive unit and integration testing with a focus on end-to-end scenarios, achieving a \textbf{code coverage of 90\%} for reliable functionality.
+    } 
+\vspace{-10pt}
+%-------------------------------------------------------------------------------
+%                Certifications
+%-------------------------------------------------------------------------------
+
+\section*{Certifications}
+\begin{tabular}{p{0.75\textwidth} r}
+  \Certification{\href{https://www.credly.com/badges/206c77db-681a-45dd-a19b-a7a86991c1e6/linked_in_profile}{AWS Certified Cloud Practitioner}}{10th Sept 2023 – 20th Sept 2023} \\
+  \Certification{\href{https://www.credly.com/badges/c8578ec9-3270-467f-a7a9-ce08911cc0ef?source=linked_in_profile}{Google Data Analytics Professional Certificate}}{20th Oct 2021 – 24th Dec 2021} \\
+  \Certification{\href{}{Java Professional Summer Training}}{17th Jun 2020 – 28th Jul 2020} \\
+\end{tabular}
+
+
+\vspace{-7pt}
+%-------------------------------------------------------------------------------
+%                Education
+%-------------------------------------------------------------------------------
+
+\section{Education}
+
+\EducationExperience
+    {Vellore Institute of Technology} % school name
+    {B.Tech. Computer Science and Engineering} % credential name
+    {Jun 2023} % date of graduation
+    {CGPA: 8.72} % city, country of school
+
+\vspace{-7pt}
+%-------------------------------------------------------------------------------
+%                Skills
+%-------------------------------------------------------------------------------
+
+
+
+\section{Coding Experience}
+\begin{SkillsList}
+    \item \textbf{Leetcode:} Experienced in a variety of Data structures and Algorithms, having solved 650+ problems. \\
+    % Add more skills as needed
+\end{SkillsList}
+
+\end{document}
+
+%-------------------------------------------------------------------------------
+%                Resume Ends Here
+%-------------------------------------------------------------------------------
